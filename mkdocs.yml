@@ -12,6 +12,7 @@ nav:
 - 'About': 'about.md'
 
 theme:
+  logo: 'images/logo.jpg'
   name: 'material'
   palette:
     primary: 'green'
