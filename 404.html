@@ -33,7 +33,7 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="/docs/images/favicon.ico">
+      <link rel="shortcut icon" href="/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
     
     
@@ -42,9 +42,9 @@
       
     
     
-      <link rel="stylesheet" href="/docs/assets/stylesheets/application.3020aac5.css">
+      <link rel="stylesheet" href="/assets/stylesheets/application.3020aac5.css">
       
-        <link rel="stylesheet" href="/docs/assets/stylesheets/application-palette.224b79ff.css">
+        <link rel="stylesheet" href="/assets/stylesheets/application-palette.224b79ff.css">
       
       
         
@@ -53,7 +53,7 @@
       
     
     
-      <script src="/docs/assets/javascripts/modernizr.01ccdecf.js"></script>
+      <script src="/assets/javascripts/modernizr.01ccdecf.js"></script>
     
     
       
@@ -62,10 +62,35 @@
         <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="/docs/assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="/assets/fonts/material-icons.css">
     
     
     
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-138279113-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
     
@@ -90,9 +115,9 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://heavenz.lk/docs" title="Heavenz Documentation" class="md-header-nav__button md-logo">
+        <a href="https://docs.heavenz.lk/" title="Heavenz Documentation" class="md-header-nav__button md-logo">
           
-            <img src="/docs/images/logo.jpg" width="24" height="24">
+            <img src="/images/logo.jpg" width="24" height="24">
           
         </a>
       </div>
@@ -158,9 +183,9 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://heavenz.lk/docs" title="Heavenz Documentation" class="md-nav__button md-logo">
+    <a href="https://docs.heavenz.lk/" title="Heavenz Documentation" class="md-nav__button md-logo">
       
-        <img src="/docs/images/logo.jpg" width="48" height="48">
+        <img src="/images/logo.jpg" width="48" height="48">
       
     </a>
     Heavenz Documentation
@@ -174,7 +199,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/docs/." title="Introduction" class="md-nav__link">
+    <a href="/." title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -186,7 +211,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/docs/start/" title="Start" class="md-nav__link">
+    <a href="/start/" title="Start" class="md-nav__link">
       Start
     </a>
   </li>
@@ -236,7 +261,7 @@
 	      
 	        
   <div class="md-footer-social">
-    <link rel="stylesheet" href="/docs/assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.css">
     
       <a href="https://facebook.com/heavenz.lk" class="md-footer-social__link fa fa-facebook"></a>
     
@@ -253,9 +278,9 @@
       
     </div>
     
-      <script src="/docs/assets/javascripts/application.dc02f8ce.js"></script>
+      <script src="/assets/javascripts/application.dc02f8ce.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"/docs"}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"/"}})</script>
       
     
   </body>
